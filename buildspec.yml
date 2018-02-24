@@ -3,9 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo installing pre-requisites...
-      - sudo apt-get install -y zip
-      - npm install
+      - echo nothing to install...
   pre_build:
     commands:
       - echo no pre build
@@ -14,10 +12,6 @@ phases:
       - echo no build
   post_build:
     commands:
-      - echo Zipping project..
-      - zip -r ash-nodejs.zip .
-      - echo Build completed on $(date)
 artifacts:
   files:
-    - ash-nodejs.zip
-    - .ebextensions/**/*
+    - **/*
