@@ -16,7 +16,7 @@ phases:
     commands:
       - echo Zipping project..
       - zip -r ash-nodejs.zip .
-      - echo Build completed on `date`
+      - echo Build completed on $(date)
 artifacts:
   files:
     - ash-nodejs.zip
